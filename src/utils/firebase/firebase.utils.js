@@ -5,7 +5,7 @@ import { getFirestore, doc, getDoc, setDoc, collection, writeBatch, query, getDo
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDTD4Xmg4MgrRD1Z4Mriaokq8-ybWY_tu4",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "abit-clothing-db.firebaseapp.com",
     projectId: "abit-clothing-db",
     storageBucket: "abit-clothing-db.appspot.com",
