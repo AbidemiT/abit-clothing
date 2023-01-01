@@ -12,8 +12,6 @@ const Authentication = () => {
     //         if (response) {
     //             const { user } = response;
     //             const userDocRef = await createUserDocumentFromAuth(user);
-
-    //             console.log({userDocRef});
     //         }
     //     }
 

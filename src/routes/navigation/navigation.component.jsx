@@ -15,8 +15,6 @@ const Navigation = () => {
     const { currentUser } = useContext(UserContext);
     const { showCartDropdown } = useContext(CartContext);
 
-    console.log(currentUser);
-
     const signOutHandler = async () => {
         await signOutUser()
     }
