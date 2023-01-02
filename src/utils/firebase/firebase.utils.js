@@ -7,7 +7,7 @@ import { getFirestore, doc, getDoc, setDoc, collection, writeBatch, query, getDo
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    databaseUrl: 'https://abit-clothing-db.firebaseio.com',
+    databaseURL: 'https://abit-clothing-db.firebaseio.com',
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "abit-clothing-db.firebaseapp.com",
     projectId: "abit-clothing-db",
