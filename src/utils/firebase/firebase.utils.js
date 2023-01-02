@@ -21,7 +21,6 @@ const firebaseConfig = {
 const firebaseApp = initializeApp(firebaseConfig);
 getFirestore()._settings.experimentalAutoDetectLongPolling = true;
 getFirestore()._settings.experimentalForceLongPolling = true;
-console.log({show: getFirestore()._settings});
 // getFirestore().settings({ experimentalAutoDetectLongPolling: true, merge:true });
 
 const googleProvider = new GoogleAuthProvider();
