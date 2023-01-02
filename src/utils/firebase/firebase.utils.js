@@ -19,7 +19,10 @@ const firebaseConfig = {
 // Initialize Firebase
 // eslint-disable-next-line
 const firebaseApp = initializeApp(firebaseConfig);
-// firebaseApp.firestore().settings({ experimentalForceLongPolling: true, merge:true });
+getFirestore()._settings.experimentalAutoDetectLongPolling = true;
+getFirestore()._settings.experimentalForceLongPolling = true;
+console.log({show: getFirestore()._settings});
+// getFirestore().settings({ experimentalAutoDetectLongPolling: true, merge:true });
 
 const googleProvider = new GoogleAuthProvider();
 
