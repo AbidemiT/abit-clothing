@@ -3,10 +3,11 @@ import { initializeApp } from "firebase/app"
 import { getAuth, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword, GoogleAuthProvider, signInWithRedirect, signInWithPopup, onAuthStateChanged } from "firebase/auth"
 import { getFirestore, doc, getDoc, setDoc, collection, writeBatch, query, getDocs } from "firebase/firestore"
 
-console.log({key: process.env.REACT_APP_FIREBASE_API_KEY});
+
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
+    databaseUrl: 'https://abit-clothing-db.firebaseio.com',
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "abit-clothing-db.firebaseapp.com",
     projectId: "abit-clothing-db",
@@ -18,6 +19,7 @@ const firebaseConfig = {
 // Initialize Firebase
 // eslint-disable-next-line
 const firebaseApp = initializeApp(firebaseConfig);
+firebaseApp.firestore().settings({ experimentalForceLongPolling: true, merge:true });
 
 const googleProvider = new GoogleAuthProvider();
 
