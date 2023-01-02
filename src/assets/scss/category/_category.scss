@@ -3,6 +3,9 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 40px;
 
+    @include media('<phone') {
+        grid-template-columns: 1fr;
+      }
 }
 
 .category-title {

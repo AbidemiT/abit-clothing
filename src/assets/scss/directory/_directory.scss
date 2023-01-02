@@ -1,0 +1,17 @@
+.directory-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+
+@include media('<358px') {
+    .directory-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

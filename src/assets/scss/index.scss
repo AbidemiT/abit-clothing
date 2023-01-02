@@ -1,3 +1,9 @@
+@import "./responsiveness";
+@import "./mixins";
+
+@import "./category/category";
+@import "./directory/directory";
+
 * {
   box-sizing: border-box;
 }
