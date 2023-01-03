@@ -4,12 +4,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
-
-
 }
 
-@include media('<358px') {
+@include media('<phone') {
     .directory-container {
         display: grid;
         grid-template-columns: 1fr;
