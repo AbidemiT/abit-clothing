@@ -7,8 +7,9 @@
   
     .logo-container {
       height: 100%;
-      width: 70px;
-      padding: 25px;
+      align-items: center;
+      display: flex;
+      width: 100px;
     }
   
     .nav-links-container {
@@ -17,6 +18,10 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
+
+      @include media('<phone') {
+        width: 60%;
+      }
   
       .nav-link {
         padding: 10px 15px;

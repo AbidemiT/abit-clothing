@@ -1,3 +1,12 @@
+@import "./responsiveness";
+@import "./mixins";
+
+@import "./components/category-preview/category-preview.scss";
+@import "./components/directory/directory";
+
+@import "./pages/category/category";
+@import "./pages/navigation/navigation";
+
 * {
   box-sizing: border-box;
 }
